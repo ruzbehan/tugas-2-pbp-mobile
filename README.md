@@ -116,6 +116,47 @@ Pertanyaan 5 : Jelaskan bagaimana cara kamu mengimplementasikan checklist-checkl
             3. ScaffoldMessenger menampilkan SnackBar dengan pesan yang sesuai, memberikan umpan balik instan kepada pengguna.
 
 
+TUGAS 8 
 
 
+Pertanyaan 1 : Apa kegunaan const di Flutter? Jelaskan apa keuntungan ketika menggunakan const pada kode Flutter. Kapan sebaiknya kita menggunakan const, dan kapan sebaiknya tidak digunakan?
+
+    Kegunaan const di Flutter yaitu const membuat objek menjadi immutable (tidak bisa diubah) dan hanya dibuat satu kali saat compile-time. Keuntungannya adalah menghemat memori dan meningkatkan performa aplikasi. Sebaiknya gunakan const pada widget atau nilai yang tidak berubah sepanjang aplikasi berjalan, tetapi hindari jika nilai tersebut bersifat dinamis.
+
+
+pertanyaan 2 : Jelaskan dan bandingkan penggunaan Column dan Row pada Flutter. Berikan contoh implementasi dari masing-masing layout widget ini!
+
+    Penggunaan Column dan Row di Flutter: Column mengatur widget secara vertikal (dari atas ke bawah), sedangkan Row mengatur secara horizontal (dari kiri ke kanan).
+
+    Contoh column :
+        ```
+        Column(
+            children: [
+                Text("Item 1"),
+                Text("Item 2"),
+            ],
+        )
+        ```
+
+    Contoh row : 
+        ```
+        Row(
+            children: [
+                Icon(Icons.star),
+                Text("Rating"),
+            ],
+        )
+        ```
+
+Pertanyaan 3 : Sebutkan apa saja elemen input yang kamu gunakan pada halaman form yang kamu buat pada tugas kali ini. Apakah terdapat elemen input Flutter lain yang tidak kamu gunakan pada tugas ini? Jelaskan!
+
+    Untuk elemen input pada halaman form, saya menggunakan elemen TextField untuk name, amount, dan description. Elemen input lain yang ada di Flutter tetapi tidak digunakan adalah Checkbox, Radio, Switch, dan Slider, yang sesuai untuk kebutuhan input berbeda seperti pilihan tunggal, boolean, atau nilai dalam rentang.
+
+Pertanyaan 4 : Bagaimana cara kamu mengatur tema (theme) dalam aplikasi Flutter agar aplikasi yang dibuat konsisten? Apakah kamu mengimplementasikan tema pada aplikasi yang kamu buat?
+
+    Iya, saya telah mengimplementasikannya. Untuk mengatur tema di flutter, tema dapat diatur pada MaterialApp menggunakan ThemeData untuk mendefinisikan skema warna, font, dan tampilan lainnya. Dengan mengimplementasikan tema, tampilan aplikasi menjadi konsisten di seluruh halaman.
+
+Pertanyaan 5 : Bagaimana cara kamu menangani navigasi dalam aplikasi dengan banyak halaman pada Flutter?
+
+    Navigasi antar halaman dilakukan dengan Navigator.push untuk pindah ke halaman baru, dan Navigator.pop untuk kembali ke halaman sebelumnya. Pada proyek, ini memungkinkan pengguna berpindah halaman dengan lancar.
         
